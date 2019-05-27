@@ -1,0 +1,13 @@
+---
+
+- name: Restart ZooKeeper
+  service:
+    name: zookeeper.service
+    state: restarted
+
+
+- name: Restart ClickHouse
+  service:
+    name: clickhouse-server
+    state: restarted
+
